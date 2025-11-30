@@ -16,6 +16,16 @@ The model uses TensorFlow, data augmentation, and a clean `tf.data` pipeline for
 3. Open the notebook  
 4. Run all cells (dataset auto-downloads)
 
+## Dataset
+
+This project uses CIFAR-10. The dataset is automatically downloaded by TensorFlow when you run the notebook:
+
+```python
+from tensorflow.keras.datasets import cifar10
+(train_images, train_labels), (test_images, test_labels) = cifar10.load_data()
+```
+
 ## Requirements
 ```bash
 pip install tensorflow numpy matplotlib
+
